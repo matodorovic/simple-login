@@ -13,11 +13,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="static/css/main.css" />
-
-    <link rel="stylesheet" href="https://cdn.tailwindcss.com" />
-
-
-    <title>Biograf Luleå Logga in</title>
+    <link rel="stylesheet" href="static/css/output.css" />
+    <title>Biograf Luleå Registrera dig</title>
   </head>
 
   <body>
@@ -44,6 +41,9 @@
               <a class="header-menu-item" href="under-construction.html"
                 >Presentkort</a
               >
+            </li>
+            <li>
+                <a class="header-menu-item" href="login.html">Logga in</a>
             </li>
           </menu>
         </nav>
@@ -100,19 +100,33 @@
     </div>
     </nav>
 
-    <main class="sec clear-main">
-
-
-        <div class="sec-cont">
-            <form action="#" method="post">
-                <label for="login">Email: </label>
-                <input type="email" id="login" name="login"  required>
-                <label for="password">Lösenord: </label>
-                <input type="password" id="password" name="password"  required>
-                <!-- <input type="submit" value="Logga in"> -->
-                <button type="submit" name="action">Logga in</button>
+    <main class="sec flex h-screen items-center justify-center">
+        <div class="sec-cont bg-white p-8 rounded shadow-md">
+            <h2 class="text-2xl font-bold mb-4">Registrera dig</h2>
+            <form>
+                <label for="name" class="block text-gray-700 font-bold mb-2">Ditt fullständiga namn: </label>
+                <input name="name" type="text" class="mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Namn" required>
+                <label for="login" class="block text-gray-700 font-bold mb-2">Email: </label>
+                <input type="email" id="login" name="login"
+                    class="mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Email" required>
+                <label for="password" class="block text-gray-700 font-bold mb-2">Lösenord: </label>
+                <input type="password" id="password" name="password"
+                    class="mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Lösenörd" required>
+                    <label for="password" class="block text-gray-700 font-bold mb-2">Bekräfta lösenord: </label>
+                    <input type="password" id="password" name="password"
+                        class="mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        placeholder="Lösenörd" required>
+                <button type="submit" name="action"
+                    class="mb-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Logga
+                    in</button>
             </form>
 
+            <p>Är du redan medlem?  <a
+                    class="inline-block align-baseline font-bold text-sm text-red-500 hover:text-red-800"
+                    href="login.html"> Logga in här!</a>
+            </p>
         </div>
 
     </main>
