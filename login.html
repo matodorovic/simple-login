@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="static/images/favicon_io/site.webmanifest">
-    <script type="module" src="index.js"></script>
+    <script type="module" src="login.js"></script>
     <script src="https://kit.fontawesome.com/04d50240d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="static/css/main.css" />
     <link rel="stylesheet" href="static/css/output.css" />
@@ -85,22 +85,22 @@
 
     <main class="sec flex h-screen items-center justify-center">
         <div class="sec-cont bg-white p-8 rounded shadow-md">
-            <h2 class="text-2xl font-bold mb-4">Logga in</h2>
-            <form>
+            <h2 class="text-2xl font-bold mb-4" id="login-title">Logga in</h2>
+            <form id="login-form">
                 <label for="login" class="block text-gray-700 font-bold mb-2">Email: </label>
-                <input type="email" id="login" name="login"
+                <input type="email" id="login" 
                     class="mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     placeholder="Email" required>
                 <label for="password" class="block text-gray-700 font-bold mb-2">Lösenord: </label>
-                <input type="password" id="password" name="password"
+                <input type="password" id="password" 
                     class="mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     placeholder="Lösenörd" required>
-                <button type="submit" name="action"
+                <button type="submit" id="login-btn"
                     class="mb-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Logga
                     in</button>
             </form>
 
-            <p>Inte medlem än? Du kan <a
+            <p id="not-member">Inte medlem än? Du kan <a
                     class="inline-block align-baseline font-bold text-sm text-red-500 hover:text-red-800"
                     href="signup.html"> registrera dig här!</a>
             </p>

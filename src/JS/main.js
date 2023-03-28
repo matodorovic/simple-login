@@ -3,6 +3,7 @@ import { getMovies } from "./getMovies.js";
 
 mobileMenu();
 
+/*
 if (
   location.pathname === "/Uppgift2-Biograf/" ||
   location.pathname === "/Uppgift2-Biograf/index.html" ||
@@ -112,6 +113,7 @@ if (
   }
   })();
 }
+ */
 
 if (location.pathname === "/restaurant.html" || location.pathname === "/Uppgift2-Biograf/restaurant.html") {
     document.querySelector("#restaurant-id").style.textDecoration = "underline";
