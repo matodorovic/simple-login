@@ -1,59 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="static/images/favicon_io/site.webmanifest">
-    <script type="module" src="signup.js"></script>
-    <script
-      src="https://kit.fontawesome.com/04d50240d2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="static/css/main.css" />
-    <link rel="stylesheet" href="static/css/output.css" />
-    <title>Biograf Luleå Registrera dig</title>
-  </head>
 
-  <body>
-    <header class="sec">
-      <div class="header-content-wrap sec-cont">
-        <a href="index.html" class="logo"
-          ><img src="static/images/Logo.png" alt="logo"
-        /></a>
-        <nav class="header-nav">
-          <button class="header-nav-toggle"></button>
-          <menu class="header-menu">
-            <li>
-              <a class="header-menu-item active" href="index.html">Hem</a>
-            </li>
-            <li>
-              <a class="header-menu-item" href="under-construction.html">Om oss</a>
-            </li>
-            <li>
-              <a class="header-menu-item" href="under-construction.html"
-                >Biljettinfo</a
-              >
-            </li>
-            <li>
-              <a class="header-menu-item" href="under-construction.html"
-                >Presentkort</a
-              >
-            </li>
-            <li>
-                <a class="header-menu-item" href="login.html">Logga in</a>
-            </li>
-          </menu>
-        </nav>
-      </div>
-    </header>
-    <nav class="sec">
-      <button class="mobile-nav-menu">
-        Meny <span class="arrow-top" id="menu-span">&#9662;</span>
-      </button>
-      <div class="nav sec-cont">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="static/images/favicon_io/site.webmanifest">
+  <script type="module" src="signup.js"></script>
+  <script src="https://kit.fontawesome.com/04d50240d2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link rel="stylesheet" href="static/css/output.css" />
+  <title>Biograf Luleå Registrera dig</title>
+</head>
+
+<body>
+  <header class="sec">
+    <div class="header-content-wrap sec-cont">
+      <a href="index.html" class="logo"><img src="static/images/Logo.png" alt="logo" /></a>
+      <nav class="header-nav">
+        <button class="header-nav-toggle"></button>
+        <menu class="header-menu">
+          <li>
+            <a class="header-menu-item active" href="index.html">Hem</a>
+          </li>
+          <li>
+            <a class="header-menu-item" href="under-construction.html">Om oss</a>
+          </li>
+          <li>
+            <a class="header-menu-item" href="under-construction.html">Biljettinfo</a>
+          </li>
+          <li>
+            <a class="header-menu-item" href="under-construction.html">Presentkort</a>
+          </li>
+          <li>
+            <a class="header-menu-item" href="login.html">Logga in</a>
+          </li>
+        </menu>
+      </nav>
+    </div>
+  </header>
+  <nav class="sec">
+    <button class="mobile-nav-menu">
+      Meny <span class="arrow-top" id="menu-span">&#9662;</span>
+    </button>
+    <div class="nav sec-cont">
       <ul id="nav-id">
         <li class="movies-nav">
           <ul class="movies-nav-list">
@@ -65,27 +57,21 @@
         <li class="movies-nav">
           <ul class="movies-nav-list">
             <li class="movies-nav-element">
-              <a href="under-construction.html"
-                >Salonger </a
-              >
+              <a href="under-construction.html">Salonger </a>
             </li>
           </ul>
         </li>
         <li class="movies-nav">
           <ul class="movies-nav-list">
             <li class="movies-nav-element">
-              <a href="under-construction.html"
-                >Restaurang </a
-              >
+              <a href="under-construction.html">Restaurang </a>
             </li>
           </ul>
         </li>
         <li class="movies-nav">
           <ul class="movies-nav-list">
             <li class="movies-nav-element">
-              <a href="under-construction.html"
-                >Events </a
-              >
+              <a href="under-construction.html">Events </a>
             </li>
           </ul>
         </li>
@@ -98,84 +84,68 @@
         </li>
       </ul>
     </div>
-    </nav>
+  </nav>
 
-    <main class="sec flex h-screen items-center justify-center">
-        <div class="sec-cont bg-white p-8 rounded shadow-md">
-            <h2 class="text-2xl font-bold mb-4" id="signup-title">Registrera dig</h2>
-            <form id="signup-form">
-                <label for="name" class="block text-gray-700 font-bold mb-2">Ditt fullständiga namn: </label>
-                <input id="name" type="text" class="mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Namn" required>
-                <label for="login" class="block text-gray-700 font-bold mb-2">Email: </label>
-                <input type="email" id="login" 
-                    class="mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    placeholder="Email" required>
-                <label for="create-password" class="block text-gray-700 font-bold mb-2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])">Lösenord: </label>
-                <input type="password" id="create-password" 
-                    class="mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    placeholder="Lösenörd" required>
-                <div id="password-indicator"></div>
-                    <label for="confirm-password" class="block text-gray-700 font-bold mb-2">Bekräfta lösenord: </label>
-                    <input type="password" id="confirm-password"
-                        class="mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        placeholder="Lösenörd" required>
-                <button type="submit" id="signup-btn"
-                    class="mb-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Logga
-                    in</button>
-            </form>
+  <main class="sec flex h-screen items-center justify-center">
 
-            <p id="member">Är du redan medlem?  <a
-                    class="inline-block align-baseline font-bold text-sm text-red-500 hover:text-red-800"
-                    href="login.html"> Logga in här!</a>
-            </p>
+    <div class="sec-cont bg-white p-8 rounded shadow-md">
+      <h2 class="text-2xl font-bold mb-4" id="signup-title">Registrera dig</h2>
+      <form id="signup-form">
+        <label for="name" class="block text-gray-700 font-bold mb-2">Ditt fullständiga namn: </label>
+        <input id="name" type="text"
+          class="mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          placeholder="Namn" required>
+        <label for="login" class="block text-gray-700 font-bold mb-2">Email: </label>
+        <input type="email" id="login"
+          class="mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          placeholder="Email" required>
+        <label for="create-password" class="block text-gray-700 font-bold mb-2"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])">Lösenord: </label>
+        <input type="password" id="create-password"
+          class="mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          placeholder="Lösenörd" required>
+        <p id="password-indicator" class="mb-2 -mt-2"></p>
+        <button type="submit" id="signup-btn"
+          class="mb-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Logga
+          in</button>
+      </form>
+      <p id="member">Är du redan medlem? <a
+          class="inline-block align-baseline font-bold text-sm text-red-500 hover:text-red-800" href="login.html"> Logga
+          in här!</a>
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="footer sec">
+    <div class="footer-content sec-cont">
+      <nav class="footer-nav">
+        <div class="footer-row-1">
+          <h2 class="footer-luleå-bio">LULEÅ BIO</h2>
+          <li>
+            <a class="footer-options"
+              href="https://www.google.com/maps/place/Lule%C3%A5/@65.586662,22.1823806,12z/data=!3m1!4b1!4m5!3m4!1s0x467f6314d2e8b867:0x4034506de8c8620!8m2!3d65.584819!4d22.1567026"
+              target="_blank" rel="noopener noreferrer">Lordgatan 123, Sverige</a>
+          </li>
         </div>
+        <div class="footer-row-2">
+          <h2 class="footer-kontakta-oss">KONTAKTA OSS</h2>
+          <li><a class="footer-options" href="#">0920-454545</a></li>
+          <li><a class="footer-options" href="#">info@webbsida.se</a></li>
+        </div>
+        <div class="footer-row-3">
+          <h2 class="footer-sociala-medier">SOCIALA MEDIER</h2>
+          <a href="#" class="fa-brands fa-facebook fa-xl" id="footer-facebook-logo"></a>
+          <a href="#" class="fa-brands fa-instagram fa-xl" id="footer-instagram-logo"></a>
+          <a href="#" class="fa-brands fa-twitter fa-xl" id="footer-twitter-logo"></a>
+        </div>
+        <div class="footer-row-4">
+          <h2 class="footer-övrigt">ÖVRIGT</h2>
+          <li><a class="footer-options" href="#">Meny</a></li>
+        </div>
+      </nav>
+    </div>
+  </footer>
+</body>
 
-    </main>
-
-    <footer class="footer sec">
-      <div class="footer-content sec-cont">
-        <nav class="footer-nav">
-          <div class="footer-row-1">
-            <h2 class="footer-luleå-bio">LULEÅ BIO</h2>
-            <li>
-              <a
-                class="footer-options"
-                href="https://www.google.com/maps/place/Lule%C3%A5/@65.586662,22.1823806,12z/data=!3m1!4b1!4m5!3m4!1s0x467f6314d2e8b867:0x4034506de8c8620!8m2!3d65.584819!4d22.1567026"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Lordgatan 123, Sverige</a
-              >
-            </li>
-          </div>
-          <div class="footer-row-2">
-            <h2 class="footer-kontakta-oss">KONTAKTA OSS</h2>
-            <li><a class="footer-options" href="#">0920-454545</a></li>
-            <li><a class="footer-options" href="#">info@webbsida.se</a></li>
-          </div>
-          <div class="footer-row-3">
-            <h2 class="footer-sociala-medier">SOCIALA MEDIER</h2>
-            <a
-              href="#"
-              class="fa-brands fa-facebook fa-xl"
-              id="footer-facebook-logo"
-            ></a>
-            <a
-              href="#"
-              class="fa-brands fa-instagram fa-xl"
-              id="footer-instagram-logo"
-            ></a>
-            <a
-              href="#"
-              class="fa-brands fa-twitter fa-xl"
-              id="footer-twitter-logo"
-            ></a>
-          </div>
-          <div class="footer-row-4">
-            <h2 class="footer-övrigt">ÖVRIGT</h2>
-            <li><a class="footer-options" href="#">Meny</a></li>
-          </div>
-        </nav>
-      </div>
-    </footer>
-  </body>
 </html>
