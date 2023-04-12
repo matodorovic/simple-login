@@ -1,5 +1,5 @@
 import { mobileMenu } from "./mobilmenu.js";
-import { getMovies } from "./getMovies.js";
+//import { getMovies } from "./getMovies.js";
 
 mobileMenu();
 

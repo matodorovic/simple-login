@@ -11,7 +11,7 @@
     <script type="module" src="login.js"></script>
     <script src="https://kit.fontawesome.com/04d50240d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="static/css/main.css" />
-    <link rel="stylesheet" href="static/css/output.css" />
+    <link rel="stylesheet" href="/static/css/output.css" />
     <title>Biograf Luleå Logga in</title>
 </head>
 
@@ -84,19 +84,21 @@
     </nav>
 
     <main class="sec flex h-screen items-center justify-center">
-        <div class="sec-cont bg-white p-8 rounded shadow-md">
+        <div class="sec-cont bg-white p-8 rounded shadow-md" id="login-box">
             <h2 class="text-2xl font-bold mb-4" id="login-title">Logga in</h2>
             <form id="login-form">
-                <label for="login" class="block text-gray-700 font-bold mb-2">Email: </label>
-                <input type="email" id="login" 
-                    class="mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    placeholder="Email" required>
+                <label for="username" class="block text-gray-700 font-bold mb-2">Användarnamn: </label>
+                <input id="username" type="text"
+                class="mb-2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Användarnamn" required>
+                <p id="validate-username" class="mb-2 -mt-2 text-red-500 text-sm"></p>
                 <label for="password" class="block text-gray-700 font-bold mb-2">Lösenord: </label>
-                <input type="password" id="password" 
-                    class="mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                <input type="password" id="password" minlength="4" 
+                    class="mb-2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     placeholder="Lösenörd" required>
+                <p id="validate-password" class="mb-2 -mt-2 text-red-500 text-sm"></p>
                 <button type="submit" id="login-btn"
-                    class="mb-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Logga
+                    class="mb-4 mt-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Logga
                     in</button>
             </form>
 
